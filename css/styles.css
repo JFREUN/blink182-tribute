@@ -1,0 +1,125 @@
+
+body{
+background-color: #d3d3d3;
+
+  font-family: 'PT Sans', sans-serif;
+
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    font-size: 2rem;
+}
+h3 {
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5em;
+    color: #FE019A;
+}
+h4{
+  font-family: 'Staatliches', cursive;
+}
+a {
+padding: 1em;
+border-radius: 10px;
+text-decoration: none;
+text-align: center;
+background-color: #FE019A;
+color: white;
+border: 2px solid transparent;
+}
+a:hover{
+  border: 2px solid #FE019A;
+  background-color: transparent;
+  color: #FE019A;
+}
+.flex-container {
+  background-color: white;
+  max-width: 70%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5rem 2rem;
+}
+.subhead{
+font-size: 1.5rem;
+margin: 1rem 0 4rem 0;
+text-align: center;
+}
+.img-div{
+  max-width: 80%
+}
+.title-img{
+  max-width: 100%;
+}
+
+.timeline-container {
+  max-width: 80%;
+  border-left: 10px dotted #ccc;
+  padding: 0 1.5rem 0 2rem;
+}
+.timeline-section {
+  border-radius: 10px;
+border: 1px solid #CDCDCD;
+  padding: 1em 3em 1em 1em;
+  margin: 25px 0;
+display: flex;
+flex-direction:row;
+
+
+}
+.timeline-text {
+  margin-left: 1rem;
+}
+.timeline-img {
+  align-self: center;
+}
+.quote {
+  font-size: 1.5rem;
+  text-align: center;
+}
+/* For mobile phones: */
+@media screen and (max-width: 600px){
+  .flex-container {
+    padding: 5rem 3rem;
+  }
+  .timeline-section {
+    display: flex;
+    padding: 0.5em;
+    flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  align-items:flex-start;
+  }
+  .timeline-img {
+    margin-left: 1em;
+    align-self: flex-start;
+  }
+  .timeline-text{
+    margin: 0;
+
+  }
+  a {
+    padding: 1.5em;
+  }
+}
+/* For tablets: */
+@media screen and (max-width: 768px) {
+  .timeline-section {
+    flex-direction: column;
+  }
+  .timeline-img {
+    align-self: flex-start;
+    margin-left: 1em;
+  }
+}
